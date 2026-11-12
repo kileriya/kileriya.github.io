@@ -109,7 +109,7 @@
 
 <script>
   // ===== ЗАМЕНИ ЭТО =====
-  const SPREADSHEET_ID = 'https://docs.google.com/spreadsheets/d/1-H22yc0493qH1uI7iZM6Er_dweMF-Q9Wr0ra8BOsgFM/edit?usp=sharing';
+  const SPREADSHEET_ID = '1-H22yc0493qH1uI7iZM6Er_dweMF-Q9Wr0ra8BOsgFM';
   // ======================
 
   const statusEl = document.getElementById('status');
@@ -120,7 +120,7 @@
   let quizData = [];
 
   // Официальный gviz endpoint — работает с публичными таблицами без OAuth
-  const url = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?tqx=out:json&sheet=Лист1`;
+  const url = 'quiz.json';
 
   fetch(url)
     .then(res => {
